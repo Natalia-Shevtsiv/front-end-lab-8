@@ -1,0 +1,123 @@
+@mixin BrifStyle ($width,$color,$BrifMarg) {
+  width: $width;
+  padding: 20px;
+  margin-bottom: $BrifMarg;
+  background-color: $color;
+  }
+
+  @mixin ImgBorde  {
+  border: 2px solid $HedingsColor;
+  padding: 2px;
+  }
+
+  @mixin FormActiv ($Color){
+    &:hover{
+      border:3px solid darken($Color,5%);
+    }
+  } 
+
+* {
+margin:0;
+padding:0;
+}
+body{
+background-color:$BodyBackgroundColor;   
+}
+#content{
+  background-color:$ContentBackgroundColor;
+  margin: 0 auto;
+  padding: 0px 20px;
+  width: 960px;
+}
+h1{
+  text-align: center;
+  text-transform: $TextTrans; 
+  color: $HedingsColor; 
+  padding: 25px 0px 20px 0px;
+  }
+h2{
+  color: $HedingsColor; 
+  padding: 2px 0px 20px 0px;
+  margin:0px 0;
+}
+p{
+  color: $TextColor; 
+  padding: 1px 0px 15px 0px;
+}
+.brief{
+  margin-right: 20px;
+  float: left;
+  @include BrifStyle ($BriefWidth,$BrifBackgroundColor,$BrifMargin);
+}
+caption {
+  text-align: right;
+padding-right:5px;
+}
+th{
+  text-transform: uppercase;
+  background-color:$TableHedingBackgroundColor; 
+  padding: 10px;
+  padding-left: 18px;
+  text-align: left;
+  font-weight: normal;
+}
+td{
+  color: $TextColor;
+  padding: 10px 15px 10px 20px;
+  border-bottom: 1px solid $TableHedingBackgroundColor;
+  background-color: $TableBackColor;
+  margin: 1px;
+  }
+table {
+  border-collapse: collapse;
+  padding-bottom: 50px; 
+}
+a{
+  color: $LinksColor;
+  margin-bottom: 0;
+  }
+.img-left{
+  @include ImgBorde;
+  float: left;
+  margin: 0 20px 5px 0;
+}
+.img-right {
+  @include ImgBorde; 
+  float: right;
+  margin-left: 20px;
+  }
+.form-application {
+  padding-bottom: 15px;
+}
+label {
+  display: block;
+  color: $FormTitelColor; 
+  padding-bottom: 5px;
+}
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid $FormTitelColor; 
+}
+.form-left{
+   width: 49%;
+   float: left;
+ }
+.form-right{
+   width: 49%;
+  float: right;
+}
+.form-control{
+  @include FormActiv($FormTitelColor);
+ }
+button{
+  @include FormActiv($LinksColor);
+}
+  
+button {
+  color:$LinksColor; 
+  padding:10px 60px;
+  border:1px solid $LinksColor; 
+  background-color: $ContentBackgroundColor;
+font-size: 20px;
+}
