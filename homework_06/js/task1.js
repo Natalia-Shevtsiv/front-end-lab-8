@@ -10,7 +10,7 @@ var c = parseFloat(prompt("Enter third side of triangle",""));
                  var square=(Math.sqrt(p*(p-a)*(p-b)*(p-c)));
                  if (a*b/2 == square || a*c/2 == square || b*c/2 == square) {
                       console.log ("Type of triangle is right triangle and square is %f",  parseFloat(square.toFixed(2)));
-                    } else if (a==b==c) {
+                    } else if (a==b && a==c) {
                          console.log ("Type of triangle is equilateral triangle and square is %f", parseFloat(square.toFixed(2)));
                         } else if (a==b || a==c || b==c) { 
                             console.log ("Type of triangle is isosceles triangle and square is %f",parseFloat(square.toFixed(2)));
