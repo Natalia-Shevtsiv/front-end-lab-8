@@ -1,0 +1,14 @@
+li {
+    list-style-type:none;
+    }
+ul{
+    padding-left: 15px;
+}
+.material-icons{
+    vertical-align: bottom;
+    font-size: 18px;
+    padding-right: 5px;
+}
+.hidden ul, .hidden em{
+display: none;
+}
