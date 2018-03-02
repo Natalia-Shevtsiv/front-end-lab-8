@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    background-color: #1C1C1F;
+    color: #A19E86;
+    }
+.thumbnails, .tank-details{
+    padding: 15px 10px;
+}
+.picture{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.flag{
+      max-width: 100%;
+     width: auto;
+     height: 0.7em;
+     padding: 0;
+   }
+.tank {
+   margin:  10px 5px;
+   max-width: 190px;
+}
+.description {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.tankLevel{
+    font-size: 1.2em;
+}
+.tankNamePreview {
+    color: #C8D2B8;
+}
+a {
+    text-decoration: none;
+    color: #A19E86;
+}
+a:hover, .picture:hover,
+.description:hover {
+    background-color: #2C2C2C;
+    text-decoration: none;
+}
+.tanksColection{
+  display: flex;
+  flex-wrap: wrap;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 8px 8px;
+    border: 1px solid #A19E86;
+    color: #D7D2B7;
+}
+.tankPreview {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    }
+.tankName{
+    text-transform: uppercase;
+    color: #A09D85;
+}
+.tankFullName{
+    font-weight: bold;
+    font-size: 2em;
+}
